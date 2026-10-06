@@ -22,7 +22,7 @@ export const projects = [
   slug: 'jabha-fashions',
   name: 'Jabha Fashions',
   category: 'Business Website',
-  filter: ['Web', 'Business'],
+  filter: ['Websites'],
   title: 'Jabha Fashions — Digital Product Catalogue & Business Website',
   summary: 'A modern fashion business website with a dynamic product catalogue, category filtering, service showcase, and product management dashboard.',
   features: ['Responsive business website', 'Product catalogue', 'Category filtering', 'Services showcase', 'Admin dashboard', 'Add, edit and delete products', 'Product image upload', 'Product pricing management', 'Responsive mobile navigation'],
@@ -38,7 +38,7 @@ export const projects = [
   slug: 'josh-enterprises',
   name: 'Josh Enterprises',
   category: 'Business Website',
-  filter: ['Web', 'Business'],
+  filter: ['Websites'],
 
   title: 'Josh Enterprises — Business Website & Product Showcase',
 
