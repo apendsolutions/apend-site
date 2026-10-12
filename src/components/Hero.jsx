@@ -1,16 +1,22 @@
-const nodes = [['Restaurant', -90], ['Retail', -38], ['Healthcare', 14], ['Startup', 64], ['Services', 116], ['Analytics', 168], ['AI', 218]]
+const nodes = ['Restaurant', 'Retail', 'Healthcare', 'Startup', 'Services', 'Analytics', 'AI']
+
 function Visual() {
   return (
-    <svg viewBox="0 0 440 440" role="img" aria-label="APEND at the centre, connected to restaurants, retail, healthcare, startups, service businesses, analytics and AI" className="hero-art">
-      <circle cx="220" cy="220" r="110" className="ring" /><circle cx="220" cy="220" r="170" className="ring faint" />
-      {nodes.map(([l, a]) => {
-        const r = 170, x = 220 + r * Math.cos((a * Math.PI) / 180), y = 220 + r * Math.sin((a * Math.PI) / 180)
-        const w = l.length * 7.4 + 26
-        return (<g key={l}><line x1="220" y1="220" x2={x} y2={y} className="spoke" />
-          <rect x={x - w / 2} y={y - 14} width={w} height="28" rx="14" className="pill" /><text x={x} y={y + 4.5} textAnchor="middle" className="pill-t">{l}</text></g>)
-      })}
-      <circle cx="220" cy="220" r="46" className="core" /><text x="220" y="225" textAnchor="middle" className="core-t">APEND</text>
-    </svg>
+    <div className="stage" role="img"
+      aria-label="APEND at the centre, connected to restaurants, retail, healthcare, startups, service businesses, analytics and AI">
+      <div className="scene" aria-hidden="true">
+        <span className="orbit o1" />
+        <span className="orbit o2" />
+        {nodes.map((label, i) => (
+          <div key={label} className="arm"
+            style={{ '--a': `${i * (360 / nodes.length) - 90}deg`, '--h': `${[0, 26, 10][i % 3]}px` }}>
+            <span className="beam" />
+            <span className="node"><span className="tag">{label}</span></span>
+          </div>
+        ))}
+        <div className="hub"><span className="orb">APEND</span></div>
+      </div>
+    </div>
   )
 }
 export default function Hero() {

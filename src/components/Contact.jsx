@@ -30,9 +30,16 @@ export default function Contact() {
   const a = (id) => ({ id, name: id, 'aria-invalid': !!errs[id], 'aria-describedby': errs[id] ? id + '-e' : undefined })
   return (
     <section id="contact" className="section dark"><div className="wrap contact">
-      <div><h2>Have an Idea?</h2>
-        <p className="lead">Tell us what you're looking to build. We'll discuss your idea and figure out the best way to turn it into a working digital solution.</p>
-        <p className="direct">Prefer email? <a href={`mailto:${contact.email}`}>{contact.email}</a></p></div>
+      <div className="idea-parent">
+  <div className="idea-card">
+    <div className="idea-box">
+      <h2 className="idea-title">Have an Idea?</h2>
+      <p className="idea-text">Tell us what you're looking to build. We'll discuss your idea and figure out the best way to turn it into a working digital solution.</p>
+      <a className="idea-link" href={`mailto:${contact.email}`}>Prefer email? {contact.email}</a>
+    </div>
+    <div className="idea-badge"><i aria-hidden="true" /><span>Open</span></div>
+  </div>
+</div>
       <form onSubmit={submit} noValidate aria-busy={status === 'loading'}>
         <div className="two"><F id="name" label="Name" req><input {...a('name')} autoComplete="name" /></F>
           <F id="email" label="Email" req><input {...a('email')} type="email" autoComplete="email" /></F></div>
