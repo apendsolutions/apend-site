@@ -192,3 +192,18 @@ input,select,textarea{width:100%;min-height:48px;padding:11px 14px;font:inherit;
 .hero-in,.contact,.grid2{grid-template-columns:1fr}.hero-art{max-width:380px}.stack{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.grid4,.grid3,.why,.steps,.stack,.two,.fgrid{grid-template-columns:1fr}.cols{columns:1}.featured .pbody{padding:26px}.featured .preview{padding:20px}.row .btn{flex:1 1 100%}.card{padding:22px}form{padding:20px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.steps li{opacity:1;transform:none}}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.plan{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px;box-shadow:var(--sh)}
+.plan.rec{border:2px solid var(--acc)}
+.plan .btn{margin-top:auto}.plan .ticks{margin:8px 0 24px}
+.badge{position:absolute;top:-13px;left:24px;background:var(--acc);color:#fff;font-size:.8rem;font-weight:700;padding:4px 12px;border-radius:999px}
+.price{font-size:2.2rem;font-weight:800;letter-spacing:-.02em;margin:4px 0 8px}.price small{font-size:.9rem;font-weight:600;color:var(--mut);letter-spacing:0}
+.best{font-size:.9rem;font-weight:600;color:var(--acc)}
+.addons{margin:28px 0 0;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:6px 22px}
+.addons summary{cursor:pointer;font-weight:700;padding:14px 0;min-height:44px}
+.addons dl{margin:0 0 12px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+.addons dl div{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.addons dt{margin:0}.addons dd{margin:0;font-weight:700;white-space:nowrap}
+.pnotes{margin:28px 0 24px;display:grid;gap:8px;color:var(--mut);font-size:.92rem;max-width:80ch}
+.pnotes li{padding-left:18px;position:relative}.pnotes li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:#aeb4bf}
+@media(max-width:900px){.plans{grid-template-columns:1fr}.addons dl{grid-template-columns:1fr}}

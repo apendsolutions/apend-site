@@ -1,7 +1,7 @@
 export const contact = { email: 'apendsolutions@gmail.com', github: 'https://github.com/AnandhaKumar2004', linkedin: 'https://linkedin.com/in/anandha-kumar',
   // Optional: set VITE_FORM_ENDPOINT (e.g. a Formspree URL) in .env to send form submissions directly.
   endpoint: import.meta.env.VITE_FORM_ENDPOINT || '' }
-export const nav = [['Home', '#home'], ['Services', '#services'], ['Build Catalog', '#catalog'], ['About', '#about'], ['Team', '#team'], ['Contact', '#contact']]
+export const nav = [['Home', '#home'], ['Services', '#services'], ['Build Catalog', '#catalog'], ['Pricing', '#pricing'], ['About', '#about'], ['Team', '#team'], ['Contact', '#contact']]
 export const why = [
   ['Business first', 'We start with your actual requirement, then choose the technology.'],
   ['Built around your needs', 'Solutions follow the way your business already works.'],

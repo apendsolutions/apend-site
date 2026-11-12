@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { contact } from '../data/site.js'
-const types = ['Business website', 'Management system', 'AI application', 'Dashboard / automation', 'Something else']
+const types = ['Business website', 'Website package (Starter / Business / Advanced)', 'Management system', 'AI application', 'Dashboard / automation', 'Something else']
 export default function Contact() {
   const [status, setStatus] = useState('idle')
   const [errs, setErrs] = useState({})
