@@ -145,6 +145,17 @@ input,select,textarea{width:100%;min-height:48px;padding:11px 14px;font:inherit;
 .idea-badge{position:absolute;top:30px;right:30px;display:flex;align-items:center;gap:7px;padding:9px 13px;background:#16181d;
   border:1px solid #5eead4;color:#5eead4;font-weight:800;font-size:.85rem;transform:translate3d(0,0,80px)}
 .idea-badge i{width:8px;height:8px;border-radius:50%;background:#5eead4}
+/* Single team member: wide horizontal card */
+.grid2>.member:only-child{grid-column:1/-1;max-width:920px;display:grid;grid-template-columns:150px 1fr;column-gap:36px;align-content:start}
+.member:only-child .avatar{grid-row:1/span 6;width:150px;height:150px;margin:0}
+.member:only-child>*:not(.avatar){grid-column:2}
+
+
+@media(max-width:640px){
+  .grid2>.member:only-child{grid-template-columns:1fr}
+  .member:only-child .avatar{grid-row:auto;width:96px;height:96px;margin-bottom:16px}
+  .member:only-child>*:not(.avatar){grid-column:1}
+}
 
 @media (hover:hover) and (prefers-reduced-motion:no-preference){
   .idea-card:hover{background-position:-100px 100px,-100px 100px;transform:rotate3d(.5,1,0,30deg)}

@@ -9,7 +9,13 @@ export const projects = [
     tech: ['React', 'Vite', 'Supabase', 'PostgreSQL', 'Vercel'],
     challenge: 'Restaurants often run their public presence and daily operations in separate places: a menu on one side, orders and bills on paper or in spreadsheets on the other.',
     solution: 'One platform: customers browse the menu and order, while staff sign in to an admin area to manage menu and prices, handle orders, bill at the counter and review sales.',
-    role: '', demoUrl: 'https://ananth-hotel.vercel.app/', repoUrl: null, image: '/projects/ananthhotel.jpg' },
+    role: '', demoUrl: 'https://ananth-hotel.vercel.app/', repoUrl: null, image: '/projects/ananthhotel.jpg',
+    gallery: [
+  { src: '/projects/ananthhotel/Dashboard.png', alt: 'AnanthHotel admin sales analytics dashboard', caption: 'Sales analytics and revenue insights' },
+  { src: '/projects/ananthhotel/Orders.png', alt: 'AnanthHotel admin order management screen', caption: 'Order management' },
+  { src: '/projects/ananthhotel/Billing.png', alt: 'AnanthHotel POS billing screen', caption: 'POS billing with GST and discounts' },
+  { src: '/projects/ananthhotel/Priceupdate.png', alt: 'AnanthHotel menu and price management screen', caption: 'Menu and price management' },
+], },
   { slug: 'fridgeflow', name: 'FridgeFlow', category: 'AI Application', filter: ['AI'],
     title: 'FridgeFlow — AI-Powered Recipe Assistant',
     summary: 'An AI-powered application that turns available ingredients into practical recipes.',
@@ -32,7 +38,13 @@ export const projects = [
   role: 'Design & Development',
   demoUrl: 'https://www.jabhafashions.com/',
   repoUrl: null,
-  image: '/projects/jabhafashions.jpg'
+  image: '/projects/jabhafashions.png',
+  gallery: [
+  { src: '/projects/Jabhafasions/Dashboard.png', alt: 'Jabha Fashions admin dashboard for managing categories and products', caption: 'Admin dashboard with product and category controls' },
+  { src: '/projects/Jabhafasions/orderDetails.png', alt: 'Jabha Fashions order management screen', caption: 'Order management dashboard' },
+  { src: '/projects/Jabhafasions/Productdesc.png', alt: 'Jabha Fashions product edit form', caption: 'Edit product details and pricing' },
+  { src: '/projects/Jabhafasions/Products.png', alt: 'Jabha Fashions product catalogue listing', caption: 'Product catalogue and inventory overview' },
+],
 },
   {
   slug: 'josh-enterprises',
@@ -54,7 +66,7 @@ export const projects = [
 
   role: 'Design & Development',
 
-  demoUrl: 'https://website-rho-one-27.vercel.app',
+  demoUrl: 'https://josh-enterprises.vercel.app/',
   repoUrl: null,
   image: '/projects/joshRo.jpg'
 }
